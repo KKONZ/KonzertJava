@@ -1,1 +1,1 @@
-This program is designed to compute a value of a harmonic series using a function that utilizes recursion. The user will enter the number of terms in a harmonic series which the program will then output the sum of that series.
+This is a basic java program that prompts a user to enter an initial and outputs the value back to the user.

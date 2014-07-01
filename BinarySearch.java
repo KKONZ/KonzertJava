@@ -7,7 +7,7 @@ public class BinarySearch {
     int jk = binarySearch(list, 11);
     int kk = binarySearch(list, 12);
 
-    System.out.println(ik;
+    System.out.println(ik);
     System.out.println(jk);
     System.out.println(kk);
   }

@@ -9,13 +9,13 @@ public class MergeSort{
 		if(myList.length <= 1){
 			return myList;
 		}
-		int[] myFirst = new int[myList.length/2];
+		int[] myFirst = new int[myList.length / 2];
 		int[] mySecond = new int[myList.length - myFirst.length];
-		System.arraycopy(myList, 0, myFirst, myFirst.length);
+		System.arraycopy(myList, 0, myFirst, 0, myFirst.length);
 		System.arraycopy(myList, myFirst.length, mySecond, 0, mySecond.length);
 		
 		mergeSort(myFirst);
-		merge(mySecond);
+		mergeSort(mySecond);
 		
 		merge(myFirst, mySecond, myList);
 		return myList;
@@ -42,9 +42,10 @@ public class MergeSort{
 			System.arraycopy(mySecond, imySecond, result, j, mySecond.length - imySecond);
 		}
 		
-		public static void main(String[]args){
-			String List="";
-			int i =0,n=0;
+		public static void main(String[]args)throws Exception{
+			String myList="";
+			int i =0;
+			int n=0;
 			MergeSort x = new MergeSort();
 			ArrayList<Integer> arrMyList= new ArrayList<Integer>();
 			System.out.println(" ");
@@ -58,7 +59,7 @@ public class MergeSort{
 			int elmtList[] = new int[arrMyList.size()];
 			Iterator<Integer> itr = arrMyList.iterator();
 			for(int j=0;itr.hasNext();j++){
-				elmtList[j] =itr.next();
+				elmtList[j] = itr.next();
 			}
 			elmtList=mergeSort(elmtList);
 			System.out.println(" ");

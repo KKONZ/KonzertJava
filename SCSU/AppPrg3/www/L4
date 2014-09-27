@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>
+// replace title
+Foo!
+</title>
+</head><body>
+// ** relace applet name
+If your browser supports Java, the Foo applet displays below.
+// *** replace class 
+<applet code="Foo.class"width=350 height = 400>
+Your browser does not support Java.
+</applet>
+</body>
+</html>
+
